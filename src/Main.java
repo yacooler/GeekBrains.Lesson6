@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.function.DoubleToIntFunction;
 
 public class Main {
 
@@ -13,18 +14,23 @@ public class Main {
     private static void testObjects(){
         //Коты по умолчанию - не плавают
         Cat grumpyCat = new Cat("Tardar Sauce");
+
         //Мару не плавает, но у него разброс характеристик
         Cat maruCat = new Cat("Мару", 20);
+
         //Плавающий кот. Рандомайзера в полный конструктор не предусмотрено, т.к. мы точно знаем, чего хотим
         Cat swimmingCat = new Cat("Джаз", Cat.catTypeRunDistance, 5.0F, Cat.catTypeJumpHeight);
-        //Собака, которая умеет всё, с разбросом характеристик
+
+        //Собака, которая умеет всё, даже если Тимми упал в колодец. с разбросом характеристик
         Dog lessyDog = new Dog("Лесси", 20);
+
         //Хатико умеет только сидеть :( . Рандомайзера в полный конструктор не предусмотрено, т.к. мы точно знаем, чего хотим
         Dog hatikoDog = new Dog("Хатико",0.0F, 0.0F, 0.0F);
 
         System.out.println("Всего животных создано:" + Animal.getTotalAnimals());
         System.out.println("Всего котов создано:" + Cat.getTotalCats());
         System.out.println("Всего собак создано:" + Dog.getTotalDogs());
+
         System.out.println();
 
         catAction(grumpyCat);

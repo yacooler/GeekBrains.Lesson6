@@ -70,7 +70,7 @@ public abstract class Animal {
      * @param swimDistance дистанция
      * @return true, если удалось поплыть
      */
-    public abstract boolean swimMethod(float swimDistance);
+    protected abstract boolean swimMethod(float swimDistance);
 
 
     /**
@@ -94,7 +94,7 @@ public abstract class Animal {
      * @param runDistance дистанция
      * @return true, если удалось побежать
      */
-    public abstract boolean runMethod(float runDistance);
+    protected abstract boolean runMethod(float runDistance);
 
 
     /**
@@ -117,7 +117,7 @@ public abstract class Animal {
      * @param jumpHeight высота
      * @return true, если удалось подпрыгнуть
      */
-    public abstract boolean jumpMethod(float jumpHeight);
+    protected abstract boolean jumpMethod(float jumpHeight);
 
 
 
