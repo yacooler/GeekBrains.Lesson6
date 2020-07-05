@@ -161,7 +161,7 @@ public abstract class Animal {
     }
 
 
-    public static float getRandomized(float f, int percent){
+    private static float getRandomized(float f, int percent){
         return (float) Math.round( (f + f * (percent / 100.00F) - Math.random() * f * 2 * (percent / 100.00F)) * 100) / 100;
     }
 
